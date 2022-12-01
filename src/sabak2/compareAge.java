@@ -11,7 +11,6 @@ public class compareAge {
         if(age > 18) {
             System.out.println("Sizge kiruge ruksat");
         }
-
         System.out.println("Kelesi matin");
 
 //        else {
