@@ -1,6 +1,6 @@
 package sabak6;
 
-public class Square extends Rectangle{
+public class Square extends Rectangle {
 
     public Square(int length, int width) {
         super(length, width);
@@ -17,11 +17,19 @@ public class Square extends Rectangle{
         return 4 * length;
     }
 
+    public int calculatePerimeter(int length) {
+        sides = 4;
+        return 4 * length;
+    }
+
     public static void main(String[] args) {
-        Rectangle rectangle = new Rectangle(2,3);
+        Rectangle rectangle = new Rectangle(2, 3);
+        System.out.println("Calculate perimeter: " + rectangle.calculatePerimeter(2, 6));
+
         System.out.println(rectangle.calculatePerimeter());
 
         Square square = new Square(2);
         System.out.println(square.calculatePerimeter());
+        System.out.println(square.calculatePerimeter(4));
     }
 }

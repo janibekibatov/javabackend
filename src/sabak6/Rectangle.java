@@ -16,4 +16,8 @@ public class Rectangle {
     public int calculatePerimeter() {
         return 2 * (length) + 2 * (width);
     }
+
+    public int calculatePerimeter(int length, int width) {
+        return 2 * (length) + 2 * (width);
+    }
 }
